@@ -1,0 +1,295 @@
+html  {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 1920px;
+    background-image: url("../images/red_vs_blu.jpg");
+    /* background-attachment: scroll; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    /* width: 1000px; */
+    
+    margin: auto;
+    box-shadow: 10px 30px 30px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* nav {
+    display: flex;
+    flex-direction: column;
+} */
+
+.media {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 30px 30px 10px black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: fixed;
+    right:0;
+    top: 100px;
+}
+
+/* Added */
+/* ToDo: @media size increase 1920px */
+.media img {
+    width: 50px;
+    height: 50px;
+}
+
+/* body, header, section {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+} */
+
+header {
+    width: 85%;
+    height: 1000px;
+    background-image: url("../images/upward.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Added */
+.logo-header {
+    width: 80%;
+}
+
+section {
+    width: 85%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    /* width: 1000px; */
+    /* width: 85%; */
+    height: 600px;
+    padding: 48px;
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    /* background-image: linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); */
+}
+
+.character-title {
+    width: 100%;
+}
+
+.description {
+    /* width: 800px; */
+    /* width: 100%; */
+    margin-bottom: auto;
+    text-shadow: 2px 2px black;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.character {
+    /* display: flex; */
+    align-self: flex-end;
+    /* float: right; */
+    /* width: 300px; */
+}
+
+.weapon {
+    /* width: 1200px; */
+    width: 85%;
+    height: 500px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-self: center; */
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 20px solid black;
+}
+
+/* a {
+    color: orange;
+} */
+
+.character-link {
+    color: orange;
+}
+
+/* CHARACTERS */
+#scout {
+    background-size: cover;
+    background-image: url("../images/scout_background.jpg");
+}
+
+#soldier {
+    background-size: cover;
+    background-image: url("../images/soldier_background.jpg");
+}
+
+#pyro {
+    background-size: cover;
+    background-image: url("../images/meet_the_pyro.jpg");
+}
+
+#demoman {
+    background-size: cover;
+    background-image: url("../images/demoman_background.jpg");
+}
+
+#heavy {
+    background-size: cover;
+    background-image: url("../images/heavy_background.jpg");
+}
+
+#engineer {
+    background-size: cover;
+    background-image: url("../images/engineer_background.jpg");
+}
+
+#medic {
+    background-size: cover;
+    background-image: url("../images/medic_background.jpg");
+}
+
+#sniper {
+    background-size: cover;
+    background-image: url("../images/sniper_background.jpg");
+}
+
+#spy {
+    background-size: cover;
+    background-image: url("../images/spy_background.jpg");
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 1100px) {
+    body {
+        background-size: contain;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    section {
+        flex-direction: column;
+    }
+    .character {
+        align-self: inherit;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* main {
+        align-items: flex-start;
+    } */
+    header {
+        height: 500px;
+    }
+    .media img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .media {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: 10px 30px 30px 10px black;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        position: fixed;
+        /* right:0; */
+        top: 0px;
+    }
+}   
+
+
+/* #scout {
+    background-size: cover;
+    background-image: url("../images/scout_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#soldier {
+    background-size: cover;
+    background-image: url("../images/soldier_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pyro {
+    background-size: cover;
+    background-image: url("../images/meet_the_pyro.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#demoman {
+    background-size: cover;
+    background-image: url("../images/demoman_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heavy {
+    background-size: cover;
+    background-image: url("../images/heavy_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#engineer {
+    background-size: cover;
+    background-image: url("../images/engineer_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#medic {
+    background-size: cover;
+    background-image: url("../images/medic_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sniper {
+    background-size: cover;
+    background-image: url("../images/sniper_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#spy {
+    background-size: cover;
+    background-image: url("../images/spy_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

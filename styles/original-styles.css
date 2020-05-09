@@ -1,0 +1,159 @@
+html  {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url("../images/red_vs_blu.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+    box-shadow: 10px 30px 30px 10px black;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.media {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 30px 30px 10px black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: fixed;
+    right:0;
+    top: 100px;
+}
+
+body, header, section {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+header {
+    height: 1000px;
+    background-image: url("../images/upward.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 1000px;
+    height: 600px;
+    padding: 48px;
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.description {
+    width: 800px;
+    margin-bottom: auto;
+    text-shadow: 2px 2px black;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.character {
+    display:flex;
+    align-self: flex-end;
+    width: 300px;
+}
+
+.weapon {
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 20px solid black;
+}
+
+a {
+    color: orange;
+}
+
+/* CHARACTERS */
+#scout {
+    background-size: cover;
+    background-image: url("../images/scout_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#soldier {
+    background-size: cover;
+    background-image: url("../images/soldier_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pyro {
+    background-size: cover;
+    background-image: url("../images/meet_the_pyro.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#demoman {
+    background-size: cover;
+    background-image: url("../images/demoman_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heavy {
+    background-size: cover;
+    background-image: url("../images/heavy_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#engineer {
+    background-size: cover;
+    background-image: url("../images/engineer_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#medic {
+    background-size: cover;
+    background-image: url("../images/medic_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sniper {
+    background-size: cover;
+    background-image: url("../images/sniper_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#spy {
+    background-size: cover;
+    background-image: url("../images/spy_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
