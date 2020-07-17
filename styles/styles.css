@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+}
+
+html  {
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/red_vs_blu.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-size: 100% 100%; */
+}
+
+/* main {
+    box-shadow: 10px 30px 30px 10px black;
+} */
+
+.media {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 30px 30px 10px black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: fixed;
+    right:0;
+    top: 100px;
+}
+
+/* ToDo: @media size increase 1920px */
+.media img {
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    width: 82%;
+    height: 1080px;
+    margin-left: 8%;
+    background-image: url("../images/upward.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.logo-header {
+    width: 80%;
+    margin-top: 150px;
+}
+
+/* Characters backgrounds declared with ID below */
+section {
+    width: 85%;
+    margin-left: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txbox {
+    height: 600px;
+    padding-left: 48px;
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.txbox-img-title {
+    width: 100%;
+}
+
+.txbox-description {
+    margin-bottom: auto;
+    text-shadow: 2px 2px black;
+    color: white;
+    /* font-size: 1.6rem; */
+    font-size: 1.6rem;
+}
+
+.txbox-character-link {
+    color: orange;
+}
+
+.charbox {
+    align-self: flex-end;
+    display: flex;
+}
+
+.charbox-character {
+    align-self: flex-end;
+    display: flex;
+}
+
+.weapon {
+    width: 82%;
+    margin-left: 8%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 20px solid black;
+}
+
+/* CHARACTERS */
+#scout {
+    background-size: cover;
+    background-image: url("../images/scout_background.jpg");
+    background-size: 90% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#soldier {
+    background-size: cover;
+    background-image: url("../images/soldier_background.jpg");
+    background-size: 90% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#pyro {
+    background-size: cover;
+    background-image: url("../images/meet_the_pyro.jpg");
+    background-size: 90% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#demoman {
+    background-size: cover;
+    background-image: url("../images/demoman_background.jpg");
+    background-size: 90% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#heavy {
+    background-size: cover;
+    background-image: url("../images/heavy_background.jpg");
+    background-size: 90% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#engineer {
+    background-size: cover;
+    background-image: url("../images/engineer_background.jpg");
+    background-size: 90% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#medic {
+    background-size: cover;
+    background-image: url("../images/medic_background.jpg");
+    background-size: 90% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#sniper {
+    background-size: cover;
+    background-image: url("../images/sniper_background.jpg");
+    background-size: 90% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#spy {
+    background-size: cover;
+    background-image: url("../images/spy_background.jpg");
+    background-size: 90% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+/* Responsive */
+
+@media only screen and (min-width: 1380px) {
+    /* Must increase nav icons on large screen*/
+    .media img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    /* At 1100px the background is no more center with "cover", but "contain" the image is repeated */
+    body {
+        background-size: contain;
+    }
+}
+
+/* At 900px the <section> are no more enough large for .txbox and .charbox side by side
+and the text in .box has no more space */
+@media only screen and (max-width: 900px) {
+    section {
+        flex-direction: column;
+    }
+
+    .txbox {
+        height: 500px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .txbox-description {
+        /* font-size: 1.6rem; */
+        font-size: 1.2rem;
+    }
+
+    .charbox {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 8px;
+        background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); 
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .media {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: 10px 30px 30px 10px black;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        position: fixed;
+        /* right:0; */
+        top: 0px;
+    }
+} 
+
+
+/*@media only screen and (max-width: 1100px) {
+    section {*/
+       /* flex-direction: column;
+    }*/
+    /* .character {
+        align-self: inherit;
+    } */
+/*} */
+
+/* @media only screen and (max-width: 600px) {
+    /* main {
+        align-items: flex-start;
+    } */
+    /*header {
+        height: 500px;
+    }
+    .media img {
+        width: 50px;
+        height: 50px;
+    }
+} */
+
+  
+
+
+/* #scout {
+    background-size: cover;
+    background-image: url("../images/scout_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#soldier {
+    background-size: cover;
+    background-image: url("../images/soldier_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pyro {
+    background-size: cover;
+    background-image: url("../images/meet_the_pyro.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#demoman {
+    background-size: cover;
+    background-image: url("../images/demoman_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heavy {
+    background-size: cover;
+    background-image: url("../images/heavy_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#engineer {
+    background-size: cover;
+    background-image: url("../images/engineer_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#medic {
+    background-size: cover;
+    background-image: url("../images/medic_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sniper {
+    background-size: cover;
+    background-image: url("../images/sniper_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#spy {
+    background-size: cover;
+    background-image: url("../images/spy_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
